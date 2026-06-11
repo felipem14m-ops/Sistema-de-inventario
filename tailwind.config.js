@@ -13,6 +13,22 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                heading: ['Outfit', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                agro: {
+                    50: '#f2fbf5',
+                    100: '#e1f6e8',
+                    200: '#c4ebd4',
+                    300: '#96d8b6',
+                    400: '#60bc90',
+                    500: '#3ba376',
+                    600: '#2b825d',
+                    700: '#25684d',
+                    800: '#20533f',
+                    900: '#1b4435',
+                    950: '#0e261d',
+                },
             },
         },
     },
