@@ -21,10 +21,16 @@ Route::get('/dashboard', function () {
     }
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+use App\Http\Controllers\Usuariocontroller;
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    
+    // Rutas de Gestión de Usuarios
+    Route::get('/usuarios/crear', [Usuariocontroller::class, 'create'])->name('usuarios.create');
+    Route::post('/usuarios', [Usuariocontroller::class, 'store'])->name('usuarios.store');
 });
 
 require __DIR__ . '/auth.php';

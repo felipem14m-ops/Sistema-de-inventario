@@ -8,25 +8,25 @@
     <link rel="icon" href="{{ asset('images/Favicon2.png')}}" type="image/x-icon">
     <title>Bienvenido</title>
     <!-- Google Font: Source Sans Pro -->
-<link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') }}">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css') }}">
-<!-- Theme style -->
-<link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/dist/css/adminlte.min.css') }}">
-<!-- overlayScrollbars -->
-<link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') }}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css') }}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/dist/css/adminlte.min.css') }}">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-<script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
 <body>
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
         </ul>
 
         <!-- Right navbar links -->
@@ -69,13 +69,13 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                            <a href=""  class="nav-link text-dark">
+                                <a href="{{ route('usuarios.create') }}" class="nav-link text-dark">
                                     <i class="nav-icon fas fa-edit"></i>
-                                    <p>Ingreso</p>
+                                    <p>Ingresar Usuario</p>
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> 
 
                     <!-- Bodega Finca -->
                     <li class="nav-item has-treeview">
@@ -88,7 +88,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href= ""
+                                <a href=""
                                     class="nav-link text-dark">
                                     <i class="nav-icon fas fa-box"></i>
                                     <p>Insumos</p>
@@ -158,8 +158,7 @@
     </aside>
 
     <div class="content-wrapper">
-        @yield('content')*/funcion para mostrar el contenido de 
-        cada vista que extienda este layout sin sacar pagina diferente*/
+        @yield('content')
     </div>
 
     <!-- Control Sidebar -->
